@@ -11,6 +11,8 @@
     <!-- ICONE -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
 
     <title>Document</title>
 
@@ -24,41 +26,72 @@
         <!-- NAVBAR -->
         <div class="fixed-top">
             <nav class="navbar navbar-expand-lg">
-                <div class="container-fluid mx-2">
-                    <img class="mx-2" src="./assets/img/logo.svg" alt="logo">
-                    <form class="d-flex col-10" role="search">
-                        <input class="form-control me-2 bg-body-secondary" type="search" placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Search">
+                <div class="container d-flex flex-row mx-2">
+                    <img class="col-2 mr-2 d-none d-md-block" src="./assets/img/logo.svg" alt="logo">
+                    <img class="col-2 mr-2 d-md-none mob-img" src="./assets/img/mobile-logo.png" alt="logo-mobile">
+                    <form class="d-flex container col-10" role="search">
+                        <input class="form-control container ms-2 bg-body-secondary" type="search" placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Search">
+                        
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 d-flex align-items-center ">
+                                <li class="nav-item mx-2 d-none d-md-block">
+                                    <i class="fa-solid fa-bars"></i>
+                                </li>
+                                <li class="nav-item mx-2 d-none d-md-block">
+                                    <i class="fa-solid fa-question"></i>
+                                </li>
+                                <li class="nav-item mx-2 d-none d-md-block">
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </li>
+                                <li class="nav-item mx-2 d-block">
+                                    <i class="fa-solid fa-bell text-warning"></i>
+                                </li>
+                            </ul>
+                        </div>
+
                     </form>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                    </button>
                 
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex align-items-center">
-                            <li class="nav-item mx-2">
-                                <i class="fa-solid fa-bars"></i>
-                            </li>
-                            <li class="nav-item mx-2">
-                                <i class="fa-solid fa-question"></i>
-                            </li>
-                            <li class="nav-item mx-2">
-                                <i class="fa-solid fa-ellipsis-vertical"></i>
-                            </li>
-                            <li class="nav-item mx-2">
-                                <i class="fa-solid fa-bell text-warning"></i>
-                            </li>
-                        </ul>
-                    </div>
+                    
                 </div>
-              </nav>
+            </nav>
         </div>
 
         <!-- PARTE PRINCIPALE -->
-        <div>
+        <div id="contenuto">
 
-            <aside>
-                
+            <!-- PARTE LATERALE -->
+            <aside class="col-1 d-flex flex-column justify-content-between">
+
+                <ul class="list-group">
+
+                    <li class="d-flex my-1 mx-1">
+                        <i class="fa-solid fa-house text-light"></i>
+                        <span class="d-none d-md-block text-white">Home</span> 
+                    </li>
+
+                    <li class="d-flex my-1 mx-1">
+                        <i class="fa-solid fa-chart-simple text-light"></i>
+                        <span class="d-none d-md-block text-white">Stats</span>
+                    </li>
+
+                    <li class="d-flex my-1 mx-1">
+                        <i class="fa-solid fa-signal text-light"></i>
+                        <span class="d-none d-md-block text-light">Signals</span>
+                    </li>
+
+                </ul>
+
+
+                <ul class="list-group flex-end">
+                    <li class="d-flex my-1 mx-1">
+                        <i class="fa-solid fa-gear text-light"></i>
+                        <span class="d-none d-md-block text-light">Admin</span>
+                    </li>
+                </ul>
+
             </aside>
+
+
 
         </div>
     </div>
