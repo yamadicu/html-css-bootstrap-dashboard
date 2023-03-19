@@ -15,6 +15,10 @@
     width: 100%;
 }
 
+.pagina{
+    height: 80vh;
+}
+
 aside{
     background-color: rgb(0, 4, 17);
     background-image: url(../img/sidebar-bg.png);

@@ -24,7 +24,7 @@
     <div class="cont">
 
         <!-- NAVBAR -->
-        <div class="fixed-top">
+        <div class="fixed-top bg-light">
             <nav class="navbar navbar-expand-lg">
                 <div class="container d-flex flex-row mx-2">
                     <img class="col-2 mr-2 d-none d-lg-block" src="./assets/img/logo.svg" alt="logo">
@@ -254,12 +254,11 @@
                 </div>
 
                 <!-- CONTENUTO -->
-                <div class="overflow-auto">
+                <div class="overflow-auto d-flex flex-row flex-wrap">
 
-                    <!-- PRIMA TABELLA -->
-                    <div class="col-6 border border-light-subtitle rounded m-3">
+                    <!-- TABELLA -->
+                    <div class="col-7 border border-light-subtitle rounded m-3">
 
-                        <!-- TABELLA -->
                         <table class="table">
 
                             <nav class="navbar bg-body-tertiary">
@@ -272,8 +271,8 @@
                               <tr>
 
                                 <th scope="col">Nome</th>
-                                <th scope="col">Data</th>
-                                <th scope="col">ROI</th>
+                                <th scope="col" class="d-none d-md-table-cell">Data</th>
+                                <th scope="col" class="d-none d-md-table-cell">ROI</th>
                                 <th scope="col">Stato</th>
                                 <th scope="col">Azioni</th>
 
@@ -291,8 +290,12 @@
                                         </div>
                                         Classe 75
                                     </td>
-                                    <td>15 Feb 2021</td>
-                                    <td>20%</td>
+                                    <td class="d-none d-md-table-cell">
+                                        15 Feb 2021
+                                    </td>
+                                    <td class="d-none d-md-table-cell">
+                                        20%
+                                    </td>
                                     <td>
                                         <span class="badge text-bg-success">Done</span>
                                     </td>
@@ -311,8 +314,12 @@
                                         </div>
                                         Classe 76
                                     </td>
-                                    <td>16 Feb 2021</td>
-                                    <td>20%</td>
+                                    <td class="d-none d-md-table-cell">
+                                        16 Feb 2021
+                                    </td>
+                                    <td class="d-none d-md-table-cell">
+                                        20%
+                                    </td>
                                     <td>
                                         <span class="badge text-bg-success">Done</span>
                                     </td>
@@ -331,8 +338,12 @@
                                         </div>
                                         Classe 77
                                     </td>
-                                    <td>17 Feb 2021</td>
-                                    <td>20%</td>
+                                    <td class="d-none d-md-table-cell">
+                                        17 Feb 2021
+                                    </td>
+                                    <td class="d-none d-md-table-cell">
+                                        20%
+                                    </td>
                                     <td>
                                         <span class="badge text-bg-warning">Process</span>
                                     </td>
@@ -351,8 +362,12 @@
                                         </div>
                                         Classe 78
                                     </td>
-                                    <td>18 Feb 2021</td>
-                                    <td>20%</td>
+                                    <td class="d-none d-md-table-cell">
+                                        18 Feb 2021
+                                    </td>
+                                    <td class="d-none d-md-table-cell">
+                                        20%
+                                    </td>
                                     <td>
                                         <span class="badge text-bg-success">Done</span>
                                     </td>
@@ -371,8 +386,12 @@
                                         </div>
                                         Classe 79
                                     </td>
-                                    <td>19 Feb 2021</td>
-                                    <td>20%</td>
+                                    <td class="d-none d-md-table-cell">
+                                        19 Feb 2021
+                                    </td>
+                                    <td class="d-none d-md-table-cell">
+                                        20%
+                                    </td>
                                     <td>
                                         <span class="badge text-bg-danger">Failed</span>
                                     </td>
@@ -391,8 +410,12 @@
                                         </div>
                                         Classe 80
                                     </td>
-                                    <td>20 Feb 2021</td>
-                                    <td>20%</td>
+                                    <td class="d-none d-md-table-cell">
+                                        20 Feb 2021
+                                    </td>
+                                    <td class="d-none d-md-table-cell">
+                                        20%
+                                    </td>
                                     <td>
                                         <span class="badge text-bg-success">Done</span>
                                     </td>
@@ -411,8 +434,12 @@
                                         </div>
                                         Classe 81
                                     </td>
-                                    <td>21 Feb 2021</td>
-                                    <td>20%</td>
+                                    <td class="d-none d-md-table-cell">
+                                        21 Feb 2021
+                                    </td>
+                                    <td class="d-none d-md-table-cell">
+                                        20%
+                                    </td>
                                     <td>
                                         <span class="badge text-bg-danger">Failed</span>
                                     </td>
@@ -431,8 +458,12 @@
                                         </div>
                                         Classe 82
                                     </td>
-                                    <td>22 Feb 2021</td>
-                                    <td>20%</td>
+                                    <td class="d-none d-md-table-cell">
+                                        22 Feb 2021
+                                    </td>
+                                    <td class="d-none d-md-table-cell">
+                                        20%
+                                    </td>
                                     <td>
                                         <span class="badge text-bg-success">Done</span>
                                     </td>
@@ -449,8 +480,58 @@
 
                     </div>
 
+                    <!-- TODO -->
+                    <div class="col-4 border border-light-subtitle rounded m-3 todo">
+
+                        <nav class="navbar bg-body-tertiary">
+                            <div class="container-fluid">
+                              <a class="navbar-brand h2" href="#">Todo</a>
+                            </div>
+                        </nav>
+
+                        <ul class="list-group m-3">
+
+                            <li class="list-group-item container-fluid">
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                      Kickoff nuove classi
+                                    </label>
+                                </div>
+
+                            </li>
+
+                            <li class="list-group-item">
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                      Lezione di Bootstrap 5 in classe #75
+                                    </label>
+                                </div>
+
+                            </li>
+
+                            <li class="list-group-item">
+                                
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                      Controllare username github studenti
+                                    </label>
+                                </div>
+
+                            </li>
+                            
+                          </ul>
+
+                    </div>
+
+                    
+
                     <!-- F.A.Q. -->
-                    <div class="col-6 border border-light-subtitle rounded m-3">
+                    <div class="col-7 border border-light-subtitle rounded m-3">
 
                         <nav class="navbar bg-body-tertiary">
                             <div class="container-fluid">
@@ -498,6 +579,8 @@
                         </div>
 
                     </div>
+
+                    
 
                 </div>
             </div>
