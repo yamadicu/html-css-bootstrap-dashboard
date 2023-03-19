@@ -64,18 +64,18 @@
 
                 <ul class="list-group">
 
-                    <li class="d-flex my-1 mx-1">
-                        <i class="fa-solid fa-house text-light"></i>
+                    <li class="d-flex my-1 mx-1 hover">
+                        <i class="fa-solid fa-house text-light m-md-1 m-lg-2"></i>
                         <span class="d-none d-md-block text-white">Home</span> 
                     </li>
 
                     <li class="d-flex my-1 mx-1">
-                        <i class="fa-solid fa-chart-simple text-light"></i>
+                        <i class="fa-solid fa-chart-simple text-light m-md-1 m-lg-2"></i>
                         <span class="d-none d-md-block text-white">Stats</span>
                     </li>
 
                     <li class="d-flex my-1 mx-1">
-                        <i class="fa-solid fa-signal text-light"></i>
+                        <i class="fa-solid fa-signal text-light m-md-1 m-lg-2"></i>
                         <span class="d-none d-md-block text-light">Signals</span>
                     </li>
 
@@ -84,7 +84,7 @@
 
                 <ul class="list-group flex-end">
                     <li class="d-flex my-1 mx-1">
-                        <i class="fa-solid fa-gear text-light"></i>
+                        <i class="fa-solid fa-gear text-light m-md-1 m-lg-2"></i>
                         <span class="d-none d-md-block text-light">Admin</span>
                     </li>
                 </ul>
@@ -254,46 +254,48 @@
                 </div>
 
                 <!-- CONTENUTO -->
-                <div class="overflow-auto d-flex flex-row flex-wrap">
+                <div class="pagina d-flex flex-row flex-wrap">
 
-                    <!-- TABELLA -->
-                    <div class="col-7 border border-light-subtitle rounded m-3">
+                    <!-- TABELLA + F.A.Q.-->
+                    <div class="col-11 col-lg-7 m-3 tabella d-flex flex-wrap">
 
-                        <table class="table">
-
-                            <nav class="navbar bg-body-tertiary">
-                                <div class="container-fluid">
-                                  <a class="navbar-brand h2" href="#">Prosime classi</a>
-                                </div>
-                            </nav>
-                            <thead>
-
-                              <tr>
-
-                                <th scope="col">Nome</th>
-                                <th scope="col" class="d-none d-md-table-cell">Data</th>
-                                <th scope="col" class="d-none d-md-table-cell">ROI</th>
-                                <th scope="col">Stato</th>
-                                <th scope="col">Azioni</th>
-
-                              </tr>
-
-                            </thead>
-
-                            <tbody>
-
-                                <tr>
-
-                                    <td>
-                                        <div class="codice">
-                                            <i class="fa-solid fa-code text-light"></i>
-                                        </div>
-                                        Classe 75
-                                    </td>
-                                    <td class="d-none d-md-table-cell">
-                                        15 Feb 2021
-                                    </td>
-                                    <td class="d-none d-md-table-cell">
+                        <!-- TABELLA -->
+                        <div class="border border-light-subtitle rounded col-12">
+                            <table class="table">
+                                
+                                <nav class="navbar bg-body-tertiary col-12">
+                                    <div class="container-fluid">
+                                        <a class="navbar-brand h2" href="#">Prosime classi</a>
+                                    </div>
+                                </nav>
+                                <thead>
+                                    
+                                    <tr>
+                                        
+                                        <th scope="col">Nome</th>
+                                        <th scope="col" class="d-none d-md-table-cell">Data</th>
+                                        <th scope="col" class="d-none d-md-table-cell">ROI</th>
+                                        <th scope="col">Stato</th>
+                                        <th scope="col">Azioni</th>
+                                        
+                                    </tr>
+                                    
+                                </thead>
+                                
+                                <tbody>
+                                    
+                                    <tr>
+                                        
+                                        <td>
+                                            <div id="classe">
+                                                <img src="./assets/img/class-avatar.jpg" alt="">
+                                            </div>
+                                            Classe 75
+                                        </td>
+                                        <td class="d-none d-md-table-cell">
+                                            15 Feb 2021
+                                        </td>
+                                        <td class="d-none d-md-table-cell">
                                         20%
                                     </td>
                                     <td>
@@ -303,14 +305,14 @@
                                         <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pencil"></i></button>
                                         <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></button>
                                     </td>
-
+                                    
                                 </tr>
-
+                                
                                 <tr>
-
+                                    
                                     <td>
-                                        <div class="codice">
-                                            <i class="fa-solid fa-code text-light"></i>
+                                        <div id="classe">
+                                            <img src="./assets/img/class-avatar.jpg" alt="">
                                         </div>
                                         Classe 76
                                     </td>
@@ -327,14 +329,14 @@
                                         <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pencil"></i></button>
                                         <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></button>
                                     </td>
-
+                                    
                                 </tr>
-
+                                
                                 <tr>
 
                                     <td>
-                                        <div class="codice">
-                                            <i class="fa-solid fa-code text-light"></i>
+                                        <div id="classe">
+                                            <img src="./assets/img/class-avatar.jpg" alt="">
                                         </div>
                                         Classe 77
                                     </td>
@@ -351,14 +353,14 @@
                                         <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pencil"></i></button>
                                         <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></button>
                                     </td>
-
+                                    
                                 </tr>
-
+                                
                                 <tr>
-
+                                    
                                     <td>
-                                        <div class="codice">
-                                            <i class="fa-solid fa-code text-light"></i>
+                                        <div id="classe">
+                                            <img src="./assets/img/class-avatar.jpg" alt="">
                                         </div>
                                         Classe 78
                                     </td>
@@ -375,14 +377,14 @@
                                         <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pencil"></i></button>
                                         <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></button>
                                     </td>
-
+                                    
                                 </tr>
-
+                                
                                 <tr>
-
+                                    
                                     <td>
-                                        <div class="codice">
-                                            <i class="fa-solid fa-code text-light"></i>
+                                        <div id="classe">
+                                            <img src="./assets/img/class-avatar.jpg" alt="">
                                         </div>
                                         Classe 79
                                     </td>
@@ -399,14 +401,14 @@
                                         <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pencil"></i></button>
                                         <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></button>
                                     </td>
-
+                                    
                                 </tr>
-
+                                
                                 <tr>
-
+                                    
                                     <td>
-                                        <div class="codice">
-                                            <i class="fa-solid fa-code text-light"></i>
+                                        <div id="classe">
+                                            <img src="./assets/img/class-avatar.jpg" alt="">
                                         </div>
                                         Classe 80
                                     </td>
@@ -423,14 +425,14 @@
                                         <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pencil"></i></button>
                                         <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></button>
                                     </td>
-
+                                    
                                 </tr>
-
+                                
                                 <tr>
-
+                                    
                                     <td>
-                                        <div class="codice">
-                                            <i class="fa-solid fa-code text-light"></i>
+                                        <div id="classe">
+                                            <img src="./assets/img/class-avatar.jpg" alt="">
                                         </div>
                                         Classe 81
                                     </td>
@@ -447,14 +449,14 @@
                                         <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pencil"></i></button>
                                         <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></button>
                                     </td>
-
+                                    
                                 </tr>
-
+                                
                                 <tr>
-
+                                    
                                     <td>
-                                        <div class="codice">
-                                            <i class="fa-solid fa-code text-light"></i>
+                                        <div id="classe">
+                                            <img src="./assets/img/class-avatar.jpg" alt="">
                                         </div>
                                         Classe 82
                                     </td>
@@ -471,116 +473,140 @@
                                         <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pencil"></i></button>
                                         <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></button>
                                     </td>
-
+                                    
                                 </tr>
-
+                                
                             </tbody>
-
+                            
                         </table>
 
-                    </div>
-
-                    <!-- TODO -->
-                    <div class="col-4 border border-light-subtitle rounded m-3 todo">
-
-                        <nav class="navbar bg-body-tertiary">
-                            <div class="container-fluid">
-                              <a class="navbar-brand h2" href="#">Todo</a>
-                            </div>
-                        </nav>
-
-                        <ul class="list-group m-3">
-
-                            <li class="list-group-item container-fluid">
-
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                    <label class="form-check-label" for="flexCheckDefault">
-                                      Kickoff nuove classi
-                                    </label>
-                                </div>
-
-                            </li>
-
-                            <li class="list-group-item">
-
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                    <label class="form-check-label" for="flexCheckDefault">
-                                      Lezione di Bootstrap 5 in classe #75
-                                    </label>
-                                </div>
-
-                            </li>
-
-                            <li class="list-group-item">
-                                
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                    <label class="form-check-label" for="flexCheckDefault">
-                                      Controllare username github studenti
-                                    </label>
-                                </div>
-
-                            </li>
+                        </div>
+                        
+                        <!-- F.A.Q. -->
+                        <div class="col-12 border border-light-subtitle rounded mt-5">
                             
-                          </ul>
+                            <nav class="navbar bg-body-tertiary">
+                                <div class="container-fluid">
+                                <a class="navbar-brand h2" href="#">F.A.Q.</a>
+                                </div>
+                            </nav>
 
-                    </div>
+                            <div class="dropdown border border-bottom container-fluid">
+                                <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Come aggiungere un nuovo studente?
+                                </a>
+                            
+                                <ul class="dropdown-menu">
 
-                    
+                                <li><a class="dropdown-item" href="#">Action</a></li>
 
-                    <!-- F.A.Q. -->
-                    <div class="col-7 border border-light-subtitle rounded m-3">
+                                </ul>
 
-                        <nav class="navbar bg-body-tertiary">
-                            <div class="container-fluid">
-                              <a class="navbar-brand h2" href="#">F.A.Q.</a>
                             </div>
-                        </nav>
 
-                        <div class="dropdown border border-bottom">
-                            <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              Come aggiungere un nuovo studente?
-                            </a>
-                          
-                            <ul class="dropdown-menu">
+                            <div class="dropdown border border-bottom">
+                                <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Come posso accedere alle informazioni del mio account?
+                                </a>
+                            
+                                <ul class="dropdown-menu">
 
-                              <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Action</a></li>
 
-                            </ul>
+                                </ul>
 
-                        </div>
+                            </div>
 
-                        <div class="dropdown border border-bottom">
-                            <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              Come posso accedere alle informazioni del mio account?
-                            </a>
-                          
-                            <ul class="dropdown-menu">
+                            <div class="dropdown border border-bottom">
+                                <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Posso usare questa dashboard da mobile?
+                                </a>
+                            
+                                <ul class="dropdown-menu">
 
-                              <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Action</a></li>
 
-                            </ul>
+                                </ul>
 
-                        </div>
-
-                        <div class="dropdown border border-bottom">
-                            <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              Posso usare questa dashboard da mobile?
-                            </a>
-                          
-                            <ul class="dropdown-menu">
-
-                              <li><a class="dropdown-item" href="#">Action</a></li>
-
-                            </ul>
+                            </div>
 
                         </div>
 
                     </div>
 
-                    
+                    <!-- TODO + UTENTI ATTIVI -->
+                    <div class="col-11 col-lg-4 d-flex flex-wrap">
+
+                        <!-- TODO -->
+                        <div class="border border-light-subtitle rounded m-3 todo col-12">
+
+                            <!-- TODO -->
+                            <nav class="navbar bg-body-tertiary">
+                                <div class="container-fluid">
+                                    <a class="navbar-brand h2" href="#">Todo</a>
+                                </div>
+                            </nav>
+
+                            <ul class="list-group m-3">
+
+                                <li class="list-group-item container-fluid">
+
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                        Kickoff nuove classi
+                                        </label>
+                                    </div>
+
+                                </li>
+
+                                <li class="list-group-item">
+
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                        Lezione di Bootstrap 5 in classe #75
+                                        </label>
+                                    </div>
+
+                                </li>
+
+                                <li class="list-group-item">
+                                    
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                        Controllare username github studenti
+                                        </label>
+                                    </div>
+
+                                </li>
+                            
+                            </ul>
+                        </div>
+
+                        <!-- UTENTI ATTIVI -->
+                        <div class="border border-light-subtitle rounded m-3 col-12">
+
+                            <div class="m-3">
+
+                                <img class="col-11" src="./assets/img/stats.jpeg" alt="">
+                                
+                                <span class="d-block h5">Utenti attivi</span>
+                                <span>Lista degli utenti attiviin piattaforma nell'ultimo mese</span>
+                                
+                                <ul class="list-group">
+                                    <li class="list-group-item">Gennaio: 1200</li>
+                                    <li class="list-group-item">Febbraio: 800</li>
+                                    <li class="list-group-item">Marzo: 1500</li>
+                                    <li class="list-group-item"><a href="#">Visualizza report approfondito</a></li>
+                                </ul>
+
+                            </div>
+
+                        </div>
+
+                    </div>
 
                 </div>
             </div>
